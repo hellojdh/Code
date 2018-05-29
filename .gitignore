@@ -1,0 +1,2 @@
+# Do not upload *.class file which is already complied to github
+bin/
