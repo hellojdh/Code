@@ -2,6 +2,7 @@ package baekjoon.q1000;
 
 import java.util.Scanner;
 
+// 원 내접 외접 접점
 public class S1002 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
