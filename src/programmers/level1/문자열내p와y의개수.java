@@ -1,6 +1,6 @@
 package programmers.level1;
 
-public class countPY {
+public class 문자열내p와y의개수 {
     boolean solution(String s) {
         int p = 0;
         int y = 0;
@@ -12,7 +12,7 @@ public class countPY {
         		y++;
         }
 
-        return p==y?true:false;
+        return p==y;
         
 //        s = s.toLowerCase();
 //        return s.chars().filter((value)->'p'==value).count() 

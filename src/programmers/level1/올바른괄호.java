@@ -2,7 +2,7 @@ package programmers.level1;
 
 import java.util.Stack;
 
-public class OpenClose {
+public class 올바른괄호 {
 	public static void main(String[] args) {
 		System.out.println(solution("()()"));
 		System.out.println(solution("(())()"));

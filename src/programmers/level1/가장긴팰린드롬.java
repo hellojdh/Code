@@ -1,6 +1,6 @@
 package programmers.level1;
 
-public class Palindrome {
+public class 가장긴팰린드롬 {
 	public static void main(String[] args) {
 		System.out.println(solution("abcdcba"));
 		System.out.println(solution("abbaaaaaabba"));

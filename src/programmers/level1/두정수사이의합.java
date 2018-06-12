@@ -2,7 +2,7 @@ package programmers.level1;
 
 import java.util.Stack;
 
-public class BetweenPlus {
+public class 두정수사이의합 {
 	public static void main(String[] args) {
 		System.out.println(solution(3,5));
 		System.out.println(solution(3,3));
