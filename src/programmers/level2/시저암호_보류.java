@@ -2,7 +2,7 @@ package programmers.level2;
 
 import java.util.StringTokenizer;
 
-public class 시저암호 {
+public class 시저암호_보류 {
 	public String solution(String s, int n) {
 		StringTokenizer st = new StringTokenizer(s);
 		

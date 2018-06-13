@@ -3,7 +3,7 @@ package programmers.level1;
 import java.util.StringTokenizer;
 
 // 보류 문제
-public class JadenCase문자열만들기 {
+public class JadenCase문자열만들기_보류 {
 	
     public static String solution(String s) {
     	String[] temp = s.split(" ");

@@ -2,7 +2,7 @@ package programmers.level1;
 
 import java.util.StringTokenizer;
 
-public class 이상한문자만들기 {
+public class 이상한문자만들기_보류 {
     static String solution(String s) {
     	StringTokenizer st = new StringTokenizer(s);
     	String result = "";
