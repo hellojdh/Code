@@ -1,2 +1,5 @@
-# Code
-### 알고리즘 문제 풀이
+## Code
+### algorithm
+#### [source site(acmicpc)](https://www.acmicpc.net)
+#### [source site(swexpert)](https://www.swexpertacademy.com)
+#### [my blog - whereisusb](https://whereisusb.tistory.com/)
