@@ -19,7 +19,7 @@ public class Q2117 {
 		int tc = Integer.parseInt(br.readLine());
 		for(int i=1;i<=tc;i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine());
-			n = Integer.parseInt(st.nextToken());
+			n = Integer.parseInt(st.nextToken()); // n*n 크기의 배열
 			m = Integer.parseInt(st.nextToken()); // 하나의 집이 지불하는 비용
 			arr = new int[n][n];
 			visited = new boolean[n][n];
