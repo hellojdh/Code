@@ -16,6 +16,7 @@ public class Q1952 {
                 pay[j] = sc.nextInt();
             for(int j=0;j<12;j++)
                 month[j] = sc.nextInt();
+            
             result = Integer.MAX_VALUE;
             solve(0,0);
             System.out.println("#"+i+" "+result);
