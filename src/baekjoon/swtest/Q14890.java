@@ -50,7 +50,7 @@ public class Q14890 {
 				// flag 가 true일 경우 개수를 따져줘서 아니면 false
 				if(flag) {
 					if(cnt<l) return false;
-					else cnt=0;
+					else cnt-=l;
 				}
 				// 이전 것 보다 크다면 이태까지 cnt의 개수로 판단
 				if(cnt<l) return false;
