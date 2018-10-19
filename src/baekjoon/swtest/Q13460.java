@@ -10,10 +10,10 @@ public class Q13460 {
 		Scanner sc = new Scanner(System.in);
 		n = sc.nextInt(); // 세로 크기
 		m = sc.nextInt(); // 가로 크기
-		arr = new int[n][m];
-		copy = new int[n][m];
-		t = new Pair(0, 0, 0, 0);
-		t2 = new Pair(0, 0, 0, 0);
+		arr = new int[n][m]; // 원 배열
+		copy = new int[n][m]; // 복사 배열
+		t = new Pair(0, 0, 0, 0); // R B의 최초값
+		t2 = new Pair(0, 0, 0, 0); // 케이스를 진행할 때 R B의 좌표값
 		for(int i=0;i<n;i++) {
 			String str = sc.next();
 			for(int j=0;j<m;j++) {
@@ -91,11 +91,20 @@ public class Q13460 {
 				break;
 			}
 		}
-		// R은 만났고, B가 움직이다 R을 만났다면,  
+		// R은 만나지 않았고, B가 움직이다 R을 만났다면  
 		if(!flagRB && flagBR) {
 			bx = bx-dir[d][0];
 			by = by-dir[d][1];
 		}
+		
+		// B가 끝났다면 false
+		if(flagB) {
+			end = true; // 게임 끝
+			return false;
+		}
+		// R이 끝났다면 true
+		if(flagR) return true;
+		
 		// 바뀐 값들 넣어주기
 		copy[t2.rx][t2.ry]='.';
 		copy[rx][ry] = 'R';
@@ -105,14 +114,6 @@ public class Q13460 {
 		// 시작값 바꿔주기
 		t2.rx=rx; t2.ry=ry;
 		t2.bx=bx; t2.by=by;
-		
-		// B가 끝났다면 false
-		if(flagB) {
-			end = true; // 게임 끝
-			return false;
-		}
-		// R이 끝났다면 true
-		if(flagR) return true;
 		return false;
 	}
 	
