@@ -1,4 +1,4 @@
-package baekjoon.q2000;
+package baekjoon.q1000;
 
 import java.util.ArrayList;
 import java.util.List;
