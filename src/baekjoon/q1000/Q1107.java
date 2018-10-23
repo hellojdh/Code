@@ -8,7 +8,7 @@ public class Q1107 {
 	static int[] arr;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt(); // 이동 하고자하는 채널
+		n = sc.nextInt(); // 이동  하고자하는 채널
 		k = sc.nextInt(); // 고장난 버튼 수
 		arr = new int[10]; // 버튼
 		
