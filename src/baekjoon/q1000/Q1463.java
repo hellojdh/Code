@@ -16,9 +16,9 @@ public class Q1463 {
         arr[1] = 0;
         for(int i=2;i<=n;i++){
             // 2로 나눠질 경우
-            if(i%2==0) arr[i] = Math.min(Math.min(arr[i-1],arr[i/2])+1,arr[i]);
+            if(i%2==0) arr[i] = Math.min(arr[i],arr[i/2]+1);
             // 3으로 나눠질 경우
-            if(i%3==0) arr[i] = Math.min(Math.min(arr[i-1],arr[i/3])+1,arr[i]);
+            if(i%3==0) arr[i] = Math.min(arr[i],arr[i/3]+1);
             // -1 경우
             arr[i] = Math.min(arr[i],arr[i-1]+1);
             // 세가지 케이스중 가장 작은 값을 같도록 한다.
