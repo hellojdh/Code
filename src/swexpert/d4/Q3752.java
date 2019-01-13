@@ -25,12 +25,12 @@ public class Q3752 {
 
             dp = new boolean[sum+10];
             dp[0] = true;
+            // 각 점수별로 만들 수 있는 점수를 만들어 주자.
             for(int i=0;i<n;i++){
                 for(int j=sum;j>=0;j--){
-                    if(dp[j]){
-                        dp[j] = true;
+                    // 가능한 점수를 만나면 현 점수 더해주기
+                    if(dp[j])
                         dp[arr[i]+j] = true;
-                    }
                 }
             }
             result = 0;
