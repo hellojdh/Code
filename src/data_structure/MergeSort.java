@@ -1,30 +1,39 @@
 package data_structure;
 
-import java.util.HashSet;
-
 public class MergeSort {
+    static int[] arr,copy;
     public static void main(String[] args) {
-        String num = "123";
-
-
+        arr = new int[100];
+        copy = new int[100];
+        mergeSort(0,arr.length-1);
     }
-    HashSet<String> hs = new HashSet<>();
-    private boolean isWrong(String num) {
+    public static void mergeSort(int left, int right){
+        if(right-left<1) return;
+        int mid = (right+left)/2;
 
-        for(int i=1,j=1,k=1;i<10;k++){
-            if(i==j) continue;
-            if(j==k||i==k) continue;
-            if(k==10){
-                k=1;
-                j++;
-            }
-            if(j==10){
-                j=1;
-                i++;
+        mergeSort(left,mid);
+        mergeSort(mid+1,right);
+
+        // 합쳐주기
+        int tLeft = left, tRight = mid+1;
+        int idx = left;
+        while(tLeft<=mid && tRight<=right){
+            if(arr[tLeft]<arr[tRight]){
+                copy[idx++] = arr[tLeft++];
+            }else{
+                copy[idx++] = arr[tRight++];
             }
         }
 
-        if(hs.contains(num)) return false;
-        else return true;
+        while(tLeft<=mid)
+            copy[idx++] = arr[tLeft++];
+        while(tRight<=right)
+            copy[idx++] = arr[tRight++];
+
+        for(int i = left; i <= right; i++){
+            arr[i] = copy[i];
+        }
     }
+
+
 }
